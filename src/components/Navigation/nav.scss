@@ -1,0 +1,57 @@
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navBar {
+    position: fixed;
+    transform: translate3d(0, -50%, 0);
+    top: 50%;
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    left: 55px;
+    padding-top: 50px;
+
+    &__item {
+        cursor: pointer;
+        text-orientation: mixed;
+        writing-mode: vertical-rl;
+        color: white;
+        transform: rotate(180deg);
+
+        padding: 1vh 0.5vh;
+        margin: 3vh 0;
+
+        font-family: Bahnschrift;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+    
+        &.active {
+            background-color: white;
+            color: black;
+        }
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 0px) and (max-width: 768px) {
+    .navBar {
+        display: none;
+    }
+}
+
+@media (min-width: 1500px){
+    .navBar {
+        left: calc(50% - 700px);
+    }
+}

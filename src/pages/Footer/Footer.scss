@@ -1,0 +1,167 @@
+.footer {
+    &__content {
+        display: flex;
+        padding-top: 3vw;
+
+        font-family: Bank Sans EF CY;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.1vw;
+        line-height: 1.3vw;
+
+        /* WHITTE */
+
+        color: #FFFFFF;
+
+        justify-content: center;
+
+        &__logo {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            .logo_wrapper {
+                display: flex;
+                align-items: center;
+            }
+
+            &__img {
+                width: calc(2.5vw);
+                margin-right: 1vw;
+            }
+
+            &__text {
+                width: 20vw;
+            }
+        }
+
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        &__policy {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        &__community {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        a {
+            border: unset;
+            color: white !important;
+            padding-bottom: 1.5vw;
+            text-decoration: unset;
+            cursor: pointer;
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        padding: 3vw;
+
+        font-family: Bank Sans EF CY;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.2vw;
+        line-height: 1.3vw;
+        color: white;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .footer {
+        &__content {
+            flex-direction: column;
+            text-align: center;
+
+            padding-top: 2vw;
+
+            font-family: Bank Sans EF CY;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 2.8vw;
+            line-height: 2.8vw;
+
+            &__logo {
+                width: 100%;
+                padding: 5vw 0;
+
+                &__img {
+                    width: 5vw;
+                    margin-right: 2vw;
+                }
+    
+                &__text {
+                    width: 40vw !important;
+                }
+            }
+    
+            &__menu {
+                width: 100%;
+                padding: 2vw 0;
+            }
+    
+            &__policy {
+                width: 100%;
+                padding: 2vw 0;
+            }
+    
+            &__community {
+                width: 100%;
+                padding: 2vw 0;
+            }
+
+            a {
+                padding-bottom: 2vw;
+            }
+        }
+
+        &__copyright {
+            padding: 10vw;
+
+            font-size: 2.8vw;
+            line-height: 3vw;
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .footer {
+        &__content {
+            padding-top: 45;
+
+            font-size: 16.5px;
+            line-height: 19.5px;
+    
+            &__logo {
+                &__img {
+                    width: 37.5px;
+                    margin-right: 15px;
+                }
+    
+                &__text {
+                    width: 300px !important;
+                }
+            }
+
+            a {
+                padding-bottom: 22.5px;
+            }
+        }
+    
+        &__copyright {
+            padding: 45px;
+
+            font-size: 18px;
+            line-height: 19.5px;
+        }
+    }
+}

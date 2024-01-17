@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Bahnschrift';
+  src: local('Bahnschrift'),
+       url('./assets/fonts/BAHNSCHRIFT.TTF') format('truetype'), /* Super Modern Browsers */
+}
+
+@font-face {  
+  font-family: 'Cygnito Mono';
+  src: local('Cygnito Mono'), local('CygnitoMono'),
+       url('./assets/fonts/Cygnito Mono.otf') format('truetype'), /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Bank Sans EF CY';
+  font-weight: 300;
+  src: local('Bank Sans EF CY'),
+       url('./assets/fonts/Bank Sans EF CY Light.otf') format('truetype'), /* Super Modern Browsers */
+}
+
+@font-face {  
+  font-family: 'Vermin Vibes';
+  src: url('./assets/fonts/vermin_vibes/VerminVibes.ttf') format('truetype');
+  src: url('./assets/fonts/VerminVibesV-Zlg3.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {  
+  font-family: 'BigBang';
+  src: local('BigBang'), local('BigBang'),
+       url('./assets/fonts/BigBang.otf') format('truetype'), /* Super Modern Browsers */
+}
+
+@font-face {  
+  font-family: 'Phoska Dangers';
+  src: url('./assets/fonts/PhoskaDangers-Regular.ttf') format('truetype'); /* Super Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: unset;
+}
+
+.App {
+  background: #191919;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading {
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+  background-color: black;
+  transition: opacity 1s;
+
+	img {
+    position: fixed;
+		width: 150px;
+		transform: translate3d(-50%, -50%, 0);
+    left: 50%;
+    top: 50%;
+	}
+
+  p {
+    position: absolute;
+    font-size: 20px;
+    transform: translate3d(-50%, 0, 0);
+    left: 50%;
+    color: #7e7e7e;
+    font-family: 'Bank Sans EF CY';
+    bottom: 0;
+  }
+}
+
+.fade-hide {
+  opacity: 0;
+}
+
+.container {
+  max-width: 1400px;
+  position: relative;
+  padding: 0 60px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.notification-container {
+  width: 600px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .container {
+    padding: 0 0px;
+  }
+
+  .notification-container {
+    width: 80%;
+  }
+}

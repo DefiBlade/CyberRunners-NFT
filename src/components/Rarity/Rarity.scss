@@ -1,0 +1,367 @@
+.rarity {
+    &__content {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        background: #9BE7A9;
+        z-index: 10;
+
+        &__tag {
+            position: absolute;
+            width: 18%;
+            top: calc(-2vw);
+            right: calc(8vw);
+            z-index: 100;
+        }
+
+        &__back {
+            width: 40%;
+            overflow: hidden;
+
+            img {
+                width: 55vw;
+            }
+        }
+
+        &__desc {
+            width: 60%;
+
+            div {
+                padding: 5vw;
+                padding-top: 4vw;
+            }
+
+            &__title {
+                width: 23vw;
+
+                margin-block-start: 4vw;
+                margin-block-end: 4vw;
+            }
+
+            &__first {
+                font-family: Bank Sans EF CY;
+                
+                font-weight: 300;
+                font-size: 2.3vw;
+                line-height: 3vw;
+            }
+
+            &__second {
+                font-family: Bank Sans EF CY;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 1.9vw;
+                line-height: 2.5vw;
+            }
+
+            p {
+                font-style: normal;
+                text-transform: uppercase;
+
+                color: #2B2656;
+            }
+
+            button {
+                font-family: Bank Sans EF CY;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 1.3vw;
+
+                color: white;
+                outline: unset;
+                border: unset;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3vw;
+
+                background: #2B2656;
+                
+                &:hover, &:active {
+                    background: white;
+                    color: #2B2656;
+                }
+
+                a {
+                    padding: 1.5vw 2vw;
+                    font-size: 1.7vw;
+                }
+            }
+        }
+    }
+
+    &__explore {
+        margin-top: -5px;
+
+        position: relative;
+        background: #F1549E;
+        z-index: 11;
+        
+        .subContainer {
+            padding: 0;
+            padding-top: 3vw;
+            padding-bottom: 0;
+        }
+
+        &__tag {
+            position: absolute;
+            width: 8%;
+            top: calc(-4vw);
+            right: calc(18vw);
+        }
+
+        &__title {
+            font-family: Bank Sans EF CY;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 2.5vw;
+            line-height: 1vw;
+
+            color: white;
+        }
+
+        &__charac {
+            padding: 0 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                padding: 0;
+                position: relative;
+
+                p {
+                    font-family: BigBang;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2.4vw;
+                    line-height: 127.2%;
+
+                    letter-spacing: 0.1em;
+
+                    color: #FFFFFF;
+                }
+            }
+
+            img {
+                width: 75vw;
+
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            &__hair {
+                position: absolute;
+                left: 16vw;
+                top: 9vw;
+            }
+
+            &__eyewear {
+                position: absolute;
+                right: 2vw;
+                top: 25vw;
+            }
+
+            &__biomods {
+                position: absolute;
+                right: 8vw;
+                top: 41vw;
+            }
+
+            &__body {
+                position: absolute;
+                left: 11vw;
+                top: 44vw;
+            }
+
+            &__clothing {
+                position: absolute;
+                right: -9vw;
+                bottom: 6vw;
+            }
+        }
+
+        &.hide {
+            position: absolute;
+            z-index: -1;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 0px) and (max-width: 768px) {
+    .rarity {
+        &__content {
+            &__back {
+                width: 100%;
+                overflow: hidden;
+                height: calc(77vw);
+                padding-left: 0;
+
+                img {
+                    width: 100%;
+                    position: relative;
+                    bottom: 70%;
+                }
+            }
+
+            &__desc {
+                width: 100%;
+
+                div {
+                    padding: 5vw;
+                }
+
+                &__title {
+                    line-height: 8vw;
+                }
+
+                &__first {
+                    font-size: 3vw;
+                    line-height: 4.5vw;
+                }
+
+                &__second {
+                    font-size: 2.7vw;
+                    line-height: 4vw;
+                }
+
+                button {
+                    margin-top: 5vw;
+                    margin-bottom: 3vw;
+
+                    a {
+                        padding: 2vw 2.3vw;
+                        font-size: 2.5vw !important;
+                    }
+                }
+            }
+        }
+
+        &__explore {
+            .subContainer {
+                padding: 4vw;
+                padding-top: 3vw;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .rarity {
+        &__content {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            background: #9BE7A9;
+
+            &__back {
+                img {
+                    width: 815px;
+                }
+            }
+
+            &__tag {
+                padding-right: 60px;
+                right: 0;
+                z-index: 200;
+            }
+    
+            &__desc {
+    
+                div {
+                    padding: 40px;
+                    padding-top: 60px;
+                    padding-right: 20px;
+                }
+    
+                &__title {
+                    width: 345px;
+                    
+                    margin-block-start: 60px;
+                    margin-block-end: 60px;
+                }
+    
+                &__first {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+    
+                &__second {
+                    font-size: 29px;
+                    line-height: 38px;
+                }
+    
+                button {
+                    margin-top: 50px;
+
+                    a {
+                        padding: 22.5px 30px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        &__explore {
+            .subContainer {
+                padding: 0;
+                padding-top: 45px;
+                padding-bottom: 0;
+            }
+    
+            &__tag {
+                width: 8%;
+                top: -40px;
+                right: 270px;
+            }
+    
+            &__title {
+                font-size: 37px;
+                line-height: 15px;
+            }
+    
+            &__charac {
+    
+                div {
+                    p {
+                        font-size: 37.5px;
+                    }
+                }
+
+                img {
+                    width: 1125px;
+                }
+    
+                &__hair {
+                    left: 240px;
+                    top: 135px;
+                }
+    
+                &__eyewear {
+                    right: 30px;
+                    top: 375px;
+                }
+    
+                &__biomods {
+                    right: 120px;
+                    top: 615px;
+                }
+    
+                &__body {
+                    left: 165px;
+                    top: 660px;
+                }
+    
+                &__clothing {
+                    right: -135px;
+                    bottom: 90px;
+                }
+            }
+        }
+    }
+}

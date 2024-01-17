@@ -1,0 +1,146 @@
+.topMenu {
+    z-index: 200;
+    display: flex;
+    top: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        &__img {
+            width: 24.62px;
+            margin-right: 10px;
+        }
+
+        &__text {
+            font-size: 1.3rem;
+            color: white;
+            font-family: Vermin Vibes;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        &__walletBtn {
+            font-family: Cygnito Mono;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+        
+            /* WHITTE */
+        
+            color: #FFFFFF;
+        
+            /* Inside Auto Layout */
+        
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        
+            padding: 5px 10px;
+            outline-style: unset;
+            border: unset;
+        
+            background-color: rgb(25, 25, 25) !important;
+            border: 1px solid #FFFFFF;
+            margin-right: 30px;
+            text-overflow: ellipsis;
+            white-space: break-spaces;
+            overflow: hidden;
+            width: 200px;
+
+            &:hover {
+                cursor: pointer;
+                border: 1px solid #000000;
+                background-color: #FFFFFF !important;
+                color: rgb(25, 25, 25);
+            }
+        }
+
+        &__icons {
+            display: flex;
+            align-items: center;
+
+            a {
+                margin-right:15px;
+                margin-left: 15px;
+
+                img {
+                    width: 28px;
+                }
+            }
+        }
+
+        &__dropDownMenu {
+            position: relative;
+            display: none;
+
+            &:hover {
+                .topMenu__menu__dropDownMenu__content {
+                    display: block;
+                }
+            }
+
+            &__icon {
+                border: none;
+                cursor: pointer;
+                width: 30px;
+            }
+
+            &__content {
+                display: none;
+                position: absolute;
+                background-color: black;
+                min-width: 200px;
+                z-index: 100;
+                right: 0;
+                top: 23px;
+
+                a {
+                    font-size: 20;
+                    color: white;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 0px) and (max-width: 768px) {
+    .topMenu {
+        padding: 0 20px;
+        top: 20px;
+
+        &__logo {
+            &__text {
+                display: none;
+            }
+        }
+
+        &__menu {
+
+            &__icons {
+                display: none;
+            }
+
+            &__dropDownMenu {
+                display: flex;
+            }
+        }
+    }
+}

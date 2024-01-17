@@ -1,0 +1,239 @@
+.team {
+    z-index: 12;
+
+    &__members {
+        position: relative;
+        background: #191919;
+
+        &__tag {
+            position: absolute;
+            width: 15%;
+            top: calc(-7vw);
+            right: calc(10vw);
+        }
+
+        &__content {
+            padding: 8vw;
+            padding-top: 4vw;
+
+            &__title {
+                width: 25vw;
+
+                margin-block-start: 1vw;
+                margin-block-end: 1vw;
+            }
+
+            &__desc {
+                font-family: Bank Sans EF CY;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 1.7vw;
+                line-height: 1.7vw;
+
+                /* WHITTE */
+
+                color: #FFFFFF;
+            }
+
+            &__people {
+                display: flex;
+                padding-top: 4vw;
+
+                div {
+                    width: 50%;
+                    padding-right: 5vw;
+                    position: relative;
+
+                    img {
+                        width: 35vw;
+                        height: 34vw;
+                    }
+
+                    a {
+                        display: inline-block;
+                        margin-right: 1vw;
+                        display: flex;
+                    }
+                }
+
+                .socialIcons {
+                    display: flex;
+                    padding: 0;
+                }
+
+                &__name {
+                    font-family: Bank Sans EF CY;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.7vw;
+                    line-height: 1.7vw;
+                    /* identical to box height, or 108% */
+
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+                }
+                
+                &__desc {
+                    font-family: Bank Sans EF CY;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.2vw;
+                    line-height: 1.2vw;
+                    /* or 119% */
+
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+                }
+
+                &__firstIcon {
+                    // background: #E35353;
+                    width: 3vw !important;
+                    height: auto !important;
+                }
+
+                &__secondIcon {
+                    // background: #7994C0;
+                    width: 3vw !important;
+                    height: auto !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .team {
+        &__members {        
+            &__tag {
+                right: 5vw;
+            }
+    
+            &__content {
+                padding: 4vw;
+                padding-top: 15vw;
+    
+                &__title {
+                    width: 35vw;
+    
+                    margin-block-start: 1vw;
+                    margin-block-end: 1vw;
+                }
+    
+                &__desc {
+                    font-size: 2.3vw;
+                    line-height: 1.7vw;
+                }
+    
+                &__people {
+                    display: flex;
+                    padding-top: 4vw;
+                    flex-direction: column;
+    
+                    div {
+                        width: 100%;
+                        padding: 5vw;
+                        padding-left: 0 !important;
+                        padding-right: 0 !important;
+                        text-align: center;
+    
+                        img {
+                            width: 70vw;
+                            height: 70vw;
+                        }
+    
+                        a {
+                            margin-right: 2vw;
+                        }
+                    }
+
+                    .socialIcons {
+                        justify-content: center;
+                    }
+    
+                    &__name {
+                        font-size: 3.7vw;
+                        line-height: 3.7vw;
+                    }
+                    
+                    &__desc {
+                        font-size: 3vw;
+                        line-height: 3vw;
+                    }
+    
+                    &__firstIcon {
+                        width: 6vw !important;
+                    }
+    
+                    &__secondIcon {
+                        width: 6vw !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .team {
+        &__members {
+            &__tag {
+                top: -105px;
+                right: 150px;
+            }
+    
+            &__content {
+                padding: 120px;
+                padding-top: 60px;
+    
+                &__title {
+                    width: 375px !important;
+    
+                    margin-block-start: 15px;
+                    margin-block-end: 15px;
+                }
+    
+                &__desc {
+                    font-size: 25.5px;
+                    line-height: 25.5px;
+                }
+    
+                &__people {
+                    padding-top: 60px;
+    
+                    div {
+                        padding-right: 75px;
+    
+                        img {
+                            width: 525px;
+                            height: 525px;
+                        }
+    
+                        a {
+                            margin-right: 15px;
+                        }
+                    }
+    
+                    &__name {
+                        font-size: 25.5px;
+                        line-height: 25.5px;
+                    }
+                    
+                    &__desc {
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
+    
+                    &__firstIcon {
+                        width: 45px !important;
+                    }
+    
+                    &__secondIcon {
+                        width: 45px !important;
+                    }
+                }
+            }
+        }
+    }
+}
